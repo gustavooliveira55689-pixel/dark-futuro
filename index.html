@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d1b">
+  <meta name="description" content="DARK FUTURO AI — seu tutor escolar inteligente.">
+  <link rel="manifest" href="/static/manifest.webmanifest">
+  <link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/style.css">
+  <title>DARK FUTURO AI</title>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><span class="logo">DF</span><span>DARK FUTURO <b>AI</b></span></a>
+    <span class="online"><i></i> ASSISTENTE ONLINE</span>
+  </header>
+  <main class="layout">
+    <section class="hero">
+      <div class="eyebrow">SEU TUTOR ESCOLAR COM IA</div>
+      <h1>Aprender ficou<br><span>mais inteligente.</span></h1>
+      <p>Envie uma questão ou uma foto da atividade. O DARK FUTURO AI explica o caminho até a resposta.</p>
+      <div class="features">
+        <span>✓ Todas as matérias</span><span>✓ Explicação passo a passo</span><span>✓ Foto da atividade</span>
+      </div>
+    </section>
+    <section class="workspace">
+      <div class="panel-head"><div><div class="eyebrow">ÁREA DE ESTUDO</div><h2>O que vamos resolver?</h2></div><span class="spark">✦</span></div>
+      <label for="subject">Matéria</label>
+      <select id="subject">
+        <option>Geral</option><option>Matemática</option><option>Português</option><option>História</option>
+        <option>Geografia</option><option>Ciências</option><option>Física</option><option>Química</option>
+        <option>Biologia</option><option>Inglês</option><option>Filosofia</option><option>Sociologia</option>
+        <option>Redação</option><option>Outra</option>
+      </select>
+      <label for="question">Sua questão</label>
+      <textarea id="question" placeholder="Digite ou cole aqui o enunciado da atividade..."></textarea>
+      <div class="actions">
+        <label class="upload" for="image">＋ Enviar foto <input id="image" type="file" accept="image/*"></label>
+        <button id="solve">Resolver questão <span>→</span></button>
+      </div>
+      <div id="fileName" class="file-name"></div>
+      <div id="status" class="status" aria-live="polite"></div>
+      <section id="result" class="result" hidden>
+        <div class="result-title">✦ EXPLICAÇÃO DO DARK FUTURO</div>
+        <div id="answer" class="answer"></div>
+      </section>
+      <p class="disclaimer">Use as explicações para aprender e confira as orientações do seu professor.</p>
+    </section>
+  </main>
+  <footer>© 2026 DARK FUTURO AI · Feito para aprender</footer>
+  <script src="/static/app.js"></script>
+</body>
+</html>
